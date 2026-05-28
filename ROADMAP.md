@@ -25,6 +25,10 @@ lk agent deploy
 
 ## Future work
 
+- **Multi-language support** — generalize beyond Spanish ↔ English to other
+  language pairs (e.g. Chinese ↔ English). The interpreter prompt, STT language
+  hints, and TTS voice would become per-language configuration rather than
+  hard-coded, so the same agent can serve any pair.
 - **Twilio fallback** for telephony, once usage exceeds LiveKit's free inbound
   minutes.
 - **Per-turn transcript + latency logging** as a JSONL stream (per-stage STT/LLM/TTS
