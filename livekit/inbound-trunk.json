@@ -1,0 +1,7 @@
+{
+  "trunk": {
+    "name": "interpreter-inbound",
+    "numbers": ["__PHONE_NUMBER__"],
+    "krispEnabled": true
+  }
+}

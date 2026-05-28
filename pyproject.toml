@@ -1,0 +1,24 @@
+[project]
+name = "voice-agent"
+version = "0.1.0"
+description = "Spanish-English voice interpreter agent over LiveKit (OpenAI Realtime + pipelined Deepgram/Claude/ElevenLabs)"
+requires-python = ">=3.11"
+dependencies = [
+    "livekit-agents>=1.5",
+    "livekit-plugins-openai>=1.5",
+    "livekit-plugins-noise-cancellation>=0.2",
+    "python-dotenv",
+    "livekit-plugins-deepgram>=1.5.8",
+    "livekit-plugins-anthropic>=1.5.8",
+    "livekit-plugins-elevenlabs>=1.5.8",
+    "livekit-plugins-silero>=1.5.8",
+    "onnxruntime>=1.17.0,<1.26",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
