@@ -12,7 +12,7 @@ provides helper methods to fire individual events with minimal payloads.
 import json
 import time
 
-from agent.logging import attach_transcript_logger
+from agent.transcript_logger import attach_transcript_logger
 
 
 class _SimpleNamespace:
