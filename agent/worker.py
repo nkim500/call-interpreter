@@ -22,7 +22,7 @@ from livekit.agents import AgentServer, RoomInputOptions  # noqa: E402
 from livekit.plugins import noise_cancellation  # noqa: E402
 
 from agent.interpreter import Interpreter  # noqa: E402
-from agent.logging import attach_transcript_logger  # noqa: E402
+from agent.transcript_logger import attach_transcript_logger  # noqa: E402
 from agent.resilience import attach_circuit_breaker, preflight_choose_mode  # noqa: E402
 from agent.sessions import build_session  # noqa: E402
 
